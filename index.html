@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>HTML Cheat Sheet</title> <!-- This name will show in Tab-->
+		<title>Details</title> <!-- This name will show in Tab-->
 	</head>
 
 	<body>
 
-		<a href="blog.html">Go to Main Page</a> <!--Link to Blog Page-->
+		<a class="fix-me button"  href="blog.html">Home</a> <!--Link to Blog Page-->
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<!--Forms -->
-		<form action = "process.php" method="GET"> <!--Mandatort-->
-			<div class="container-3">
-			<div class="box-3">
+		<form class="my-form"> <!--Mandatort-->
 			<h2>Submit Your Details</h2>
 				<div>
 					<label>First Name</label>
@@ -21,21 +19,21 @@
 				</div>
 				<br>
 				<div>
-				<label>Last Name</label>
-				<input type="text" name="last-name"
-				placeholder="Enter Last Name">
+					<label>Last Name</label>
+					<input type="text" name="last-name"
+					placeholder="Enter Last Name">
 				</div>
 				<br>
 				<div>
-				<label>Email</label>
-				<input type="email" name="email"
-				placeholder="Enter Your Email">
+					<label>Email</label>
+					<input type="email" name="email"
+					placeholder="Enter Your Email">
 				</div>
 				<br>
 				<div>
-				<label>Message</label>
-				<textarea name="message" 
-				placeholder="Enter Your Message"></textarea>
+					<label>Message</label>
+					<textarea name="message" 
+					placeholder="Enter Your Message"></textarea>
 				</div>
 				<br>
 				<div>
@@ -48,52 +46,71 @@
 				</div>
 				<br>
 				<div>
-				<label>Age:</label>
-				<input type="number" name="age"
-				placeholder="Enter Your Age">
+					<label>Age:</label>
+					<input type="number" name="age"
+					placeholder="Enter Your Age">
 				</div>
 				<br>
 				<div>
-				<label>DOB</label>
-				<input type="date" name="DOB">
+					<label>DOB</label>
+					<input type="date" name="DOB">
 				</div>
 				<br>
 				<div>
-				<label>Mobile:</label>
-				<input type="number" name="age"
-				placeholder="Enter Your Mobile Number">
+					<label>Mobile:</label>
+					<input type="number" name="age"
+					placeholder="Enter Your Mobile Number">
 				</div>
 				<br>
 				<div>
-				<label>Address</label>
-				<textarea name="Address" 
-				placeholder="Enter Your Address"></textarea>
+					<label>Address</label>
+					<textarea name="Address" 
+					placeholder="Enter Your Address"></textarea>
 				</div>
 				<br>
-				<input type="submit" name="Submit"
-				value="Submit">
 
-			</div>
-			</div>
+				<div class="button-align">
+					<input class="button" type="submit" name="Submit"
+					value="Submit">
+				</div>
 		</form>
 		
 
 		<br>
-		<div class="image-container">
-		<div class="image-box">
 		<h2> Contact Us</h2>
+		<div class="block">
 		<!-- Image -->
-		<a href="images/ceo.png">
-		<img src="images/ceo.png" alt="Image not found!" width="200" height="200">
+		<a id="main-block" href="images/ceo.png">
+		<img src="images/ceo.png" alt="Image not found!" width="170" height="170">
 		</a>
 
 		<!-- Quotations -->
-		<blockquote >
+		<blockquote id="side-block">
 		Thanks for visiting our page.<abbr title="Varun Deep Technology Agency">VDTA</abbr> is looking forward to connect with you.You can contact us on our email:vdta-agency@gmail.com on call us on:6969069690			
 		</blockquote>
-
 		</div>
-		</div>
+		<div class="block">
+		<!-- Image -->
+		<a id="main-block" href="images/ceo.png">
+		<img src="images/ceo.png" alt="Image not found!" width="170" height="170">
+		</a>
 
+		<!-- Quotations -->
+		<blockquote id="side-block">
+		Thanks for visiting our page.<abbr title="Varun Deep Technology Agency">VDTA</abbr> is looking forward to connect with you.You can contact us on our email:vdta-agency@gmail.com on call us on:6969069690			
+		</blockquote>
+		</div>
+		<div class="block">
+		<!-- Image -->
+		<a id="main-block" href="images/ceo.png">
+		<img src="images/ceo.png" alt="Image not found!" width="170" height="170">
+		</a>
+
+		<!-- Quotations -->
+		<blockquote id="side-block">
+		Thanks for visiting our page.<abbr title="Varun Deep Technology Agency">VDTA</abbr> is looking forward to connect with you.You can contact us on our email:vdta-agency@gmail.com on call us on:6969069690			
+		</blockquote>
+		</div>
+		<div class="clr"></div>
 	
 </html>
