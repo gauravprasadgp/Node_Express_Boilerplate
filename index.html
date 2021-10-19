@@ -6,149 +6,94 @@
 
 	<body>
 
-		<a href="blog.html">Go to Blog</a> <!--Link to Blog Page-->
-
-		<hr>  <!-- Thematic Break (Horizontal Rule)-->
-		<!-- Headings -->
-		<h1>Heading One</h1>
-		<h2>Heading Two</h2>
-		<h3>Heading Three</h3>
-		<h4>Heading Four</h4>
-		<h5>Heading Five</h5>
-		<h6>Heading Six</h6> <!--Size of Heading will decrease in asc. order>
-
-		<!-- Paragraph -->
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor <strong><em>incididunt ut labore et dolore magna aliqua</em></strong>. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. <em>Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur</em>. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, <a href="http://www.google.com" target="blank"> consectetur adipisicing elit, sed do eiusmod </a>
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-		<!-- Lists -->
-		<ul> <!--Unordered List (with dot)-->
-			<li>List Item 1</li>
-			<li>List Item 2</li>
-			<li>List Item 3</li>
-			<li>List Item 4</li>
-		</ul>
-
-		<ol> <!--Ordered List (with numbers)-->
-			<li>List Item 1</li>
-			<li>List Item 2</li>
-			<li>List Item 3</li>
-			<li>List Item 4</li>
-		</ol>
-
-		<!--Table-->
-		<table>
-			<thead> <!--Heading-->
-				<tr>  <!--Table Row-->
-					<th>Name</th><!--Column Heading-->
-					<th>Email</th>
-					<th>Age</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Ayush Sagar</td> <!--Data inside the column-->
-					<td>ayush@something.com</td>
-					<td>23</td>
-				</tr>
-				<tr>
-					<td>Surbhi Sagar</td>
-					<td>surbhi@something.com</td>
-					<td>22</td>
-				</tr>
-				<tr>
-					<td>Something Sagar</td>
-					<td>something@something.com</td>
-					<td>03</td>
-				</tr>
-			</tbody>
-		</table>
-		<br>
-		<hr> <!-- Horizontal Row-->
-
+		<a href="blog.html">Go to Main Page</a> <!--Link to Blog Page-->
+		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<!--Forms -->
 		<form action = "process.php" method="GET"> <!--Mandatort-->
-			<div>
-				<label>First Name</label>
-				<input type="text" name="first-name"
-				placeholder="Enter First Name">
+			<div class="container-3">
+			<div class="box-3">
+			<h2>Submit Your Details</h2>
+				<div>
+					<label>First Name</label>
+					<input type="text" name="first-name"
+					placeholder="Enter First Name">
+				</div>
+				<br>
+				<div>
+				<label>Last Name</label>
+				<input type="text" name="last-name"
+				placeholder="Enter Last Name">
+				</div>
+				<br>
+				<div>
+				<label>Email</label>
+				<input type="email" name="email"
+				placeholder="Enter Your Email">
+				</div>
+				<br>
+				<div>
+				<label>Message</label>
+				<textarea name="message" 
+				placeholder="Enter Your Message"></textarea>
+				</div>
+				<br>
+				<div>
+				<label>Gender</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Others</option>
+				</select>
+				</div>
+				<br>
+				<div>
+				<label>Age:</label>
+				<input type="number" name="age"
+				placeholder="Enter Your Age">
+				</div>
+				<br>
+				<div>
+				<label>DOB</label>
+				<input type="date" name="DOB">
+				</div>
+				<br>
+				<div>
+				<label>Mobile:</label>
+				<input type="number" name="age"
+				placeholder="Enter Your Mobile Number">
+				</div>
+				<br>
+				<div>
+				<label>Address</label>
+				<textarea name="Address" 
+				placeholder="Enter Your Address"></textarea>
+				</div>
+				<br>
+				<input type="submit" name="Submit"
+				value="Submit">
+
 			</div>
-			<br>
-			<div>
-			<label>Last Name</label>
-			<input type="text" name="last-name">
 			</div>
-			<br>
-			<div>
-			<label>Email</label>
-			<input type="email" name="email">
-			</div>
-			<br>
-			<div>
-			<label>Message</label>
-			<textarea name="message"></textarea>
-			</div>
-			<br>
-			<div>
-			<label>Gender</label>
-			<select name="gender">
-				<option value="male">Male</option>
-				<option value="female">Female</option>
-				<option value="other">Others</option>
-			</select>
-			</div>
-			<br>
-			<div>
-			<label>Age:</label>
-			<input type="number" name="age">
-			</div>
-			<br>
-			<div>
-			<label>DOB</label>
-			<input type="date" name="DOB">
-			</div>
-			<br>
-			<input type="submit" name="Submit"
-			value="Submit">
 		</form>
 		
-		<!-- Button, Require JS for the button in order to do something-->
-		<button>Click Me</button>
 
 		<br>
-
+		<div class="image-container">
+		<div class="image-box">
+		<h2> Contact Us</h2>
 		<!-- Image -->
-		<a href="Ayush_31.jpg">
-		<img src="Ayush_31.jpg" alt="Image not found!" width="200" height="200">
+		<a href="images/ceo.png">
+		<img src="images/ceo.png" alt="Image not found!" width="200" height="200">
 		</a>
 
 		<!-- Quotations -->
-		<blockquote cite="http;//traversymedia.com">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.			
+		<blockquote >
+		Thanks for visiting our page.<abbr title="Varun Deep Technology Agency">VDTA</abbr> is looking forward to connect with you.You can contact us on our email:vdta-agency@gmail.com on call us on:6969069690			
 		</blockquote>
 
-		<p>The <abbr title="World wide Web">WWW</abbr> is awesome</p> <!--abbr will underline the word and will show the detail when cursour is on it-->
+		</div>
+		</div>
 
-		<div style="margin-top:500px"></div>
+	
 </html>
