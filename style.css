@@ -17,9 +17,10 @@ a:active{
 
 
 h1{
+	border: 0.5px solid black;
+	margin: 0.5px;
 	text-align:center;
-	background-color: springgreen;
-	color: papayawhip;
+	color: black;
 	letter-spacing: 0.2px;
 	word-spacing: 0.5px;
 	padding: 50px;
@@ -27,11 +28,11 @@ h1{
 
 h2{
 	text-align:center;
+	padding-bottom: 10px;
 		}
 
 h3{
 	text-align:center;
-	background-color: lightgoldenrodyellow;
 	color: forestgreen;
 	padding: 10px;
 		}
@@ -39,6 +40,7 @@ h3{
 
 
 body{
+	background-image: url('images/rbg.jpg');
 	background-color: lightgoldenrodyellow;
 	font-family: Courier New, Courier, monospace;
 	font-size: 20px;
@@ -52,16 +54,33 @@ body{
 	width: 80%;
 	margin: auto;
 }
+.button{
+	color: black ;
+	font-weight: 1000;
+	padding: 15px 10px;
+	border: 2px solid black;
+	
+}
+.button-align{
+	position: absolute;
+	left: 50%;
+}
+.button:hover{
+	background-color: paleturquoise;
+	color: white;
+}
 
+.clr{
+	clear: both;
+}
 .box-1{
 	text-align: center;
-	background-color: lightcoral;
-	color: #ffffff;
+	color: black;
 	/*border-right: 5px green solid;
 	border-left: 5px green solid;
 	border-top: 5px green solid;
 	border-bottom: 5px green solid;*/
-	border: 5px lightgreen solid;
+	border: 3px dotted #ccc;
 	/*border-top-style: dotted;*/
 
 	padding: 20px;
@@ -72,12 +91,15 @@ body{
 	font-family: Tahoma;
 	font-weight: 800;
 	font-style: italic;
-	text-decoration: underline;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	word-spacing: 0.5em;
 	padding-bottom: 20px;
-	color: blue;
+	color: darkblue;
+}
+
+.Post{
+	padding: 20px;
 }
 
 .categories {
@@ -106,27 +128,20 @@ body{
 	
 }
 
-.container-3{
-	width: 90%;
-	margin: auto;
+.my-form {
+	padding: 50px;
 }
-.box-3{
-	text-align: left;
-	background-color: lightsteelblue;
-	color:black;
-	border: 5px black solid;
+.my-form form-group {
+	padding-bottom: 15px;
+}
+.my-form label{
+	display: block;
+}
+.my-form input[type="text"], .my-form textarea, .my-form input[type="number"]{
+	padding: 10px;
+	width: 100%;
+}
 
-	padding: 30px;
-	margin: 30px 0;
-}
-
-.box-3 h2{
-	padding-bottom: 20px;
-}
-.image-container{
-	width: 90%;
-	margin: auto;
-}
 .image-box{
 	text-align: left;
 	background-color: lightgreen;
@@ -140,6 +155,63 @@ body{
 	padding-bottom: 20px;
 }
 
+.block{
+	float: left;
+	width: 33.3%;
+	border: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main-block{
+	float: left;
+	width: 30%;
+	padding: 1px;
+	box-sizing: border-box;
+
+}
+#side-block{
+	float: right;
+	width: 70%;
+	box-sizing: border-box;
+}
+
+.fix-me {
+	position:fixed;
+	right: 0px;
+	top: 40px;
+	padding: 5px;
+
+}
+
+
+
+/*.p-box{
+	width: 800px;
+	height: 500px;
+	border: 1px solid black;
+	margin: 30px;
+	position: relative;
+	background-image: url('images/bg.jpg');
+}
+
+.p-box h2{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+}
+
+.p-box h3{
+	position: absolute;
+	right: 500px;
+	bottom: 400px;
+}
+
+.my-list li: nth-child(5){;
+	background: yellow;
+*/
+
 .main-footer{
 	text-align: center;
+	font-size: small;
 }
