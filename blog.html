@@ -1,68 +1,92 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>VDTA</title>
-	<meta name="description" content="Awesome blog by A_S">
-	
-		
-	</style>
-</head>
-<body>
-	<header > <!-- # will be used in style as a refernece to id-->
-		<h1>Varun Deep Technology Agency</h1>
-		<h3>GO DEEPER</h3>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Node Express Boilerplate</h1>
+    </header>
+    <br />
+    <section class="container">
+      <form id="my-form">
+        <h2>Submit Your Form</h2>
+        <div class="sts"></div>
+        <div>
+          <label for="Name">Name</label>
+          <input
+            class="name"
+            type="text"
+            id="name"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+        <div>
+          <label for="Email">Email</label>
+          <input
+            class="email"
+            type="email"
+            id="email"
+            placeholder="Enter Your Mail Here"
+            onblur=""
+          />
+        </div>
+        <div>
+          <label for="Gender">Gender</label>
+          <select name="Gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+        <div>
+          <label for="Mobile">Ph No.</label>
+          <input
+            class="Mobile"
+            type="number"
+            id="mobile"
+            placeholder="Enter Your Phone No."
+          />
+        </div>
+        <div>
+          <label for="DOB">DOB</label>
+          <input class="DOB" type="date" id="dob" />
+        </div>
+        <div>
+          <label for="Message">Message</label>
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="Enter your Message Here"
+          ></textarea>
+        </div>
+        <div>
+          <label for="Address">Address</label>
+          <textarea
+            name="Address"
+            placeholder="Enter your Address Here"
+            id="address"
+          ></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit" />
+        <input class="button" type="reset" value="Reset" />
+      </form>
+    </section>
+    <script src="main.js"></script>
 
-		<div class="container">
-		<div class="box-1"> <!--Class here is defiining a group for post-->
-			<h2>Software Development Agency</h2>
-			<p1>Get your SaaS, mobile or web software developed by trusted experts on-time and on-budget</p1>
-			<br>
-			Tell us what you want and we'll find the best digital solution.
-			<br>
-			Request a free proposal.</p1>
-			<br>
-			<button class="button"><a href="index.html">Get Quote</a></button>
-		</div> 
-		</div>
-
-
-	<section>
-		<article class="Post">
-		<h2>Showcase Your Thought Leadership Brand with Robust Web Design</h2>
-		<p>In today’s digital world, it is crucial to stay connected with your customers and prospects to leverage new markets and expand your business. Statistics show that approximately 4.57 billion people worldwide are active internet users, comprising 59 percent of the global population. Within this online community, 53 percent perform research before connecting with a brand to ensure they are making the right decision.
-		A study from Episerver also found that 92 percent of consumers visit a brand’s website with multiple intentions other than buying.
-		These include product/service research, comparison shopping and business review. This data proves consumers do not purchase on impulse.</p>
-		</article>
-
-		<article class="Post">
-		<h2>Superior Web Design Represents Your Company and Grows Your Business</h2>
-		<p>Creating a digital presence doesn’t mean simply building a website and waiting for customers to approach your brand. Your website is your company’s online foundation. It serves as your primary customer touchpoint and conversion machine. As such, you must ensure it ranks high in search engines, stands out from the competition and relates to your visitors' intentions.
-		
-		Statistics reveal that website design and navigation influence 94 percent of first impressions. Search engines also favor websites with responsive web design and well-structured web content. What’s more, 75 percent of site credibility comes from web page design.
-		
-		As a business owner, it is critical that you maintain a responsive website design to appeal to search engines and online users. You must ensure your target customers see a legit business platform when they search for your company online. Otherwise, you risk losing trust from your prospective clients and dissuade them from engaging with your brand.
-
-	 	Invest in responsive website design and build trust and confidence in your brand offerings. Our website design company provides SEO-friendly web design services that aim to boost your search rankings, increase your online exposure and convert page visitors into paying customers.</p>
-		</article>
-	</section>
-
-	<aside class="categories"> <!--used to describe the main object of the web page in a shorter way like a highlighter-->
-		<h2>Categories</h2>
-		<nav> <!--epresents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents-->
-			<ul>
-				<li> <a href="#">Category 1</a></li>
-				<li> <a href="#">Category 2</a></li>
-				<li> <a href="#">Category 3</a></li>
-				<li> <a href="#">Category 4</a></li>
-			</ul>
-		</nav>
-	</aside>
-
-	<footer class="main-footer"> 
-		<p>Copyright &copy; 2021, <abbr title="Varun Deep Technology Agency">VDTA</abbr></p>
-	</footer>
-</body>
+    <!-- <div class="block">
+      <nav>
+        <ul >
+          <li><a href="#">Home</a></li>
+          <li><a href="blog.html" target="blog.html">About</a></li>
+          <li><a href="#">Serivces</a></li>
+          <li><a href="blog.html" target="blog.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div> -->
+  </body>
 </html>
-
