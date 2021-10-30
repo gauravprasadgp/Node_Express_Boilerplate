@@ -11,6 +11,8 @@ var logger = require('morgan');//for logging all http request
 var methodOverride = require('method-override')//allows to use put and delete request
 var cors = require('cors');//cross origin resource sharing enables ionic to communicate with server
 var app = express();
+const fs = require('fs')
+app.use(express.static(__dirname));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(methodOverride());

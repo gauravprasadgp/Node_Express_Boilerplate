@@ -1,0 +1,19 @@
+{
+  "name": "node_express_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varun7703/Node_Express_Boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varun7703/Node_Express_Boilerplate/issues"
+  },
+  "homepage": "https://github.com/varun7703/Node_Express_Boilerplate#readme"
+}
